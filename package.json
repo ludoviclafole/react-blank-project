@@ -1,0 +1,38 @@
+{
+  "name": "react-ts-blank",
+  "version": "1.0.0",
+  "description": "blank",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --inline --history-api-fallback",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js --debug"
+  },
+  "author": "blank",
+  "license": "blank",
+  "dependencies": {
+    "history": "^2.1.2",
+    "html-webpack-plugin": "^2.22.0",
+    "material-ui": "^0.15.1",
+    "react": "15.1.0",
+    "react-dom": "15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.5.2",
+    "react-tap-event-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

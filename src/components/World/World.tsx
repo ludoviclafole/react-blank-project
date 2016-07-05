@@ -1,0 +1,15 @@
+import * as React from "react";
+import {Link} from "react-router";
+
+export default class World extends React.Component<{}, {}> {
+    constructor(props) {
+        super(props);
+    }
+
+    public render() {
+        return (<div>
+            <h1>World</h1>
+            <Link to="/">To Hello</Link>
+        </div>)
+    }
+}
