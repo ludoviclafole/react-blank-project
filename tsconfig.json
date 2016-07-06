@@ -9,6 +9,6 @@
   "files": [
     "./typings/index.d.ts",
     "./src/app.tsx",
-    "./src/**/*.tsx"
+    "./src/components/App/App.tsx"
   ]
 }
