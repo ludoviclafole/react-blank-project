@@ -5,7 +5,14 @@
   "main": "src/app.ts",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --inline --history-api-fallback",
-    "build": "./node_modules/.bin/webpack --config webpack.config.js --debug"
+    "compile": "./node_modules/.bin/webpack --config webpack.config.prod.js --debug",
+    "build": "npm run clean && npm run compile && npm run gzip && npm run get-size",
+    "gzip": "gzip ./dist/*",
+    "clean": "rm -rf ./dist",
+    "get-size-app": "echo \"App Size (GZIPED) : \" && cat ./dist/app*.gz | wc -c | ./node_modules/.bin/pretty-bytes",
+    "get-size-style": "echo \"Style Size (GZIPED) : \" && cat ./dist/style*.gz | wc -c | ./node_modules/.bin/pretty-bytes",
+    "get-size": "npm run get-size-app && npm run get-size-style",
+    "typings-install": "./node_modules/.bin/typings install"
   },
   "author": "blank",
   "license": "blank",
@@ -25,6 +32,7 @@
     "node-sass": "3.8.0",
     "postcss-cssnext": "2.7.0",
     "postcss-loader": "0.9.1",
+    "pretty-bytes-cli": "^1.0.0",
     "react-addons-test-utils": "15.1.0",
     "react-hot-loader": "1.3.0",
     "sass-loader": "4.0.0",
