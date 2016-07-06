@@ -11,3 +11,4 @@ TODO
 
 * Update to material-ui 0.15.2 and react(-*) 15.2.0 (not done cause of compatibility issue)
 * Tooling unit tests
+* make HMR really work...

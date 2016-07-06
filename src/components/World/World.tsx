@@ -9,7 +9,7 @@ export default class World extends React.Component<{}, {}> {
     public render() {
         return (<div>
             <h1>World</h1>
-            <Link to="/">To Hello</Link>
+            <Link to="/app/hello">To Hello</Link>
         </div>)
     }
 }

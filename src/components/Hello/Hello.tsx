@@ -12,7 +12,7 @@ export default class Hello extends React.Component<{}, {}> {
     public render() {
         return (<div className={style.hello}>
             <h1>Hello</h1>
-            <Link to="world" className={style.link}>To World</Link>
+            <Link to="/app/world" className={style.link}>To World</Link>
         </div>)
     }
 }

@@ -20,7 +20,7 @@ module.exports = {
             /* TypeScript */
             {
                 test: /\.tsx?$/,
-                loader: 'react-hot!ts'
+                loader: 'ts'
             },
             /* Style */
             {

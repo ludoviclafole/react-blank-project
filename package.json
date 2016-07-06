@@ -4,8 +4,8 @@
   "description": "blank",
   "main": "src/app.ts",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --inline --history-api-fallback",
-    "compile": "./node_modules/.bin/webpack --config webpack.config.prod.js --debug",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --inline --hot --history-api-fallback",
+    "compile": "./node_modules/.bin/webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run compile && npm run gzip && npm run get-size",
     "gzip": "gzip ./dist/*",
     "clean": "rm -rf ./dist",
