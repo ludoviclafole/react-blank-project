@@ -11,6 +11,8 @@ export default class World extends React.Component<{}, {}> {
             <div>
                 <h1>World</h1>
                 <Link to="/app/hello">To Hello</Link>
+                <br />
+                <Link to="/app/topology">To Topo</Link>
             </div>)
     }
 }
