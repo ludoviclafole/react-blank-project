@@ -8,6 +8,7 @@
   },
   "files": [
     "./typings/index.d.ts",
-    "./src/app.tsx"
+    "./src/app.tsx",
+    "./src/components/App/App.tsx"
   ]
 }
